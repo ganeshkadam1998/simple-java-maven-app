@@ -11,15 +11,15 @@ pipeline {
             }
         }
 
-        stage('sonar setup'){
+        stage('sonar tool'){
          environment  {
-         scannerHome= tool 'sonarmsbuild'
+         scannerHome= tool 'sonar scanner-tool'
         }
 
      steps{
-              withSonarQubeEnv('sonar-que')
+              withSonarQubeEnv('sonarqube server')
               {
-               sh "${scannerHome}/bin/sonar-scanner"
+               sh "${scannerHome}/bin/sonarqube-server"
               }
             }
 
