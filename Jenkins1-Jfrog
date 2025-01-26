@@ -6,12 +6,7 @@ def registry = 'https: //trial5u8w1m.jfrog.io/'
       PATH = "/opt/maven/bin:$PATH"
     }
     stages {
-        stage("Git clone"){
-            steps{
-                git url:'https://github.com/ganeshkadam1998/simple-java-maven-app.git',  
-                branch: 'master' 
-            }
-        }
+        
       stage("build") {
         steps {
           sh 'mvn clean deploy -Dmaven.test.skip=true'
