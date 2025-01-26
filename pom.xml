@@ -1,7 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
      
-
+<distributionManagement>
+  <repository>
+    <id>my-repository</id> <!-- Unique identifier for the repository -->
+    <name>My Maven Repository</name> <!-- Human-readable name -->
+    <url>https://trial5u8w1m.jfrog.io/artifactory/maven-repo</url> <!-- URL of the repository -->
+  </repository>
+</distributionManagement>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mycompany.app</groupId>
   <artifactId>my-app</artifactId>
