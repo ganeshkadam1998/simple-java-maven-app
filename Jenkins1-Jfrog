@@ -1,5 +1,5 @@
 // Define the URL of the Artifactory registry
-def registry = 'https: //trial5u8w1m.jfrog.io/'
+def registry = 'https: //trial5u8w1m.jfrog.io'
   pipeline {
     agent any
     environment {
@@ -51,7 +51,7 @@ def registry = 'https: //trial5u8w1m.jfrog.io/'
             {
             "files": [{
               "pattern": "target/*.jar",
-              "target": " jenkins1-jfrog-libs-release-local/{1}",
+              "target": "jenkins1-jfrog-libs-release-local/{1}",
               "flat": "false",
               "props": "${properties}",
               "exclusions": ["*.sha1", "*.md5"]
