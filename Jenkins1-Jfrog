@@ -51,7 +51,7 @@ def registry = 'https: //trial5u8w1m.jfrog.io'
             {
             "files": [{
               "pattern": "target/*.jar",
-              "target": "jenkins1-jfrog-libs-release-local/{1}",
+              "target": "jenkins1-jfrog-libs-release-local/",
               "flat": "false",
               "props": "${properties}",
               "exclusions": ["*.sha1", "*.md5"]
