@@ -24,7 +24,7 @@ def registry = 'https: //trial5u8w1m.jfrog.io/'
           scannerHome = tool 'sonar scanner-tool'
         }
         steps {
-          withSonarQubeEnv('sonarqube server ') {
+          withSonarQubeEnv('sonarqube server') {
             sh "${scannerHome}/bin/sonar-scanner"
           }
         }
