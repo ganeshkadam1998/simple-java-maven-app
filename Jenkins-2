@@ -53,7 +53,7 @@ def registry = 'https://kingsjfrog.jfrog.io'
             {
             "files": [{
               "pattern": "target/*.jar",
-              "target": "jenkins-jforg-2-libs-release-local/",
+              "target": "jenkins-2-libs-release-local/",
               "flat": "false",
               "props": "${properties}",
               "exclusions": ["*.sha1", "*.md5"]
