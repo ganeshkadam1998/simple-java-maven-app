@@ -10,7 +10,7 @@ def registry = 'https://trial5u8w1m.jfrog.io'
       stage("build") {
         steps {
          //sh 'mvn clean install'
-          sh ''mvn clean deploy -Dmaven.test.skip=true'
+          sh 'mvn clean deploy -Dmaven.test.skip=true'
           echo "----------- build completed ----------"
         }
       }
